@@ -71,6 +71,66 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-react-生命周期" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="article-date">
+  <time class="dt-published" datetime="2021-01-27T13:00:27.000Z" itemprop="datePublished">2021-01-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">react 生命周期</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="hook"><a href="#hook" class="headerlink" title="hook"></a>hook</h1><ul>
+<li>constructor(props)</li>
+<li>componentDidMount()</li>
+<li>componentDidUpdate(prevProps, prevState, snapshot)</li>
+<li>componentWillUnmount()</li>
+<li>shouldComponentUpdate(nextProps, nextState)</li>
+<li>static getDerivedStateFromProps(props, state)</li>
+<li>getSnapshotBeforeUpdate(prevProps, prevState)</li>
+<li>static getDerivedStateFromError(error)</li>
+<li>componentDidCatch(error, info)</li>
+</ul>
+<h1 id="挂载时"><a href="#挂载时" class="headerlink" title="挂载时"></a>挂载时</h1><ul>
+<li>constructor -&gt; getDerivedStateFromProps -&gt; render -&gt; update DOM tree -&gt; componentDidMount</li>
+</ul>
+<h1 id="更新时"><a href="#更新时" class="headerlink" title="更新时"></a>更新时</h1><ul>
+<li>new props -&gt; getDerivedStateFromProps -&gt; shouldComponentUpdate -&gt; render -&gt; update DOM tree -&gt; getSnapshotBeforeUpdate -&gt; componetDidUpdate</li>
+<li>setState -&gt; getDerivedStateFromProps -&gt; shouldComponentUpdate -&gt; render -&gt; update DOM tree -&gt; getSnapshotBeforeUpdate -&gt; componetDidUpdate</li>
+<li>forceUpdate -&gt; getDerivedStateFromProps -&gt; render -&gt; update DOM tree -&gt; getSnapshotBeforeUpdate -&gt; componetDidUpdate</li>
+</ul>
+<h1 id="卸载时"><a href="#卸载时" class="headerlink" title="卸载时"></a>卸载时</h1><ul>
+<li>componetWilUnmount</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://asurance.github.io/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" data-id="ckkfgsw3r0001wcn7edcr7hek" data-title="react 生命周期" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-flex" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/knowledge-points/2021/01/26/flex/" class="article-date">
@@ -166,7 +226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/01/26/flex/" data-id="ckke3yccd0000xqoqew21axvb" data-title="flex" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/01/26/flex/" data-id="ckkfgsw3f0000wcn729y1hryy" data-title="flex" class="article-share-link">分享</a>
       
       
       
@@ -207,6 +267,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">react 生命周期</a>
+          </li>
         
           <li>
             <a href="/knowledge-points/2021/01/26/flex/">flex</a>
