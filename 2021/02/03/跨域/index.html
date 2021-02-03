@@ -14,7 +14,7 @@
 <meta property="og:description" content="简单请求 方法是以下三种之一 HEAD GET POST   header只有这几种字段 Accept Accept-Language Content-Language Last-Event-ID Content-Type:只限三种值 application&#x2F;x-www-form-urlencoded multipart&#x2F;form-data text&#x2F;plain      浏览器发请求会加Orig">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-02-03T13:30:09.000Z">
-<meta property="article:modified_time" content="2021-02-03T13:53:06.582Z">
+<meta property="article:modified_time" content="2021-02-03T13:54:13.409Z">
 <meta property="article:author" content="asurance">
 <meta name="twitter:card" content="summary">
   
@@ -125,7 +125,10 @@
 <h1 id="非简单请求"><a href="#非简单请求" class="headerlink" title="非简单请求"></a>非简单请求</h1><p>浏览器会先用<code>OPTION</code>发送一条预检请求,里面除了<code>Origin</code>会带</p>
 <ol>
 <li><code>Access-Control-Request-Method</code>:跨域请求的方法</li>
-<li><code>Access-Control-Request-Headers</code>:请求中附带的额外header<br>服务器收到如果允许的话会返回除了简单请求的三个header外</li>
+<li><code>Access-Control-Request-Headers</code>:请求中附带的额外header</li>
+</ol>
+<p>服务器收到如果允许的话会返回除了简单请求的三个header外</p>
+<ol>
 <li><code>Access-Control-Allow-Methods</code>:允许的方法</li>
 <li><code>Access-Control-Allow-Headers</code>:允许的header</li>
 <li><code>Access-Control-Max-Age</code>(可选):预检有效期</li>
@@ -134,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/02/03/%E8%B7%A8%E5%9F%9F/" data-id="ckkphquai0003uen8ctt820hf" data-title="CORS跨域资源共享" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/02/03/%E8%B7%A8%E5%9F%9F/" data-id="ckkphsb700003vporg6958n5a" data-title="CORS跨域资源共享" class="article-share-link">分享</a>
       
       
       
