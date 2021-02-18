@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   
   
-  <title>进程和线程的区别 | 知识点</title>
+  <title>Http返回值 | 知识点</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="进程是资源分配最小的单位,线程是程序执行的最小单位. 进程有独立的地址空间,线程会共享地址空间. 线程创建,切换,占用资源开销小. 进程间通信不便,线程通信方便. 进程挂掉不影响其他进程,但线程挂掉会导致整个进程挂掉(线程死循环不会影响其他线程)">
+  <meta name="description" content="1xx信息提示  101 Switching Protocols 转换协议(websocket中会用到)  2xx成功  200 OK 正常  3xx重定向  304 NotModified 见缓存  4xx客户端错误  400 BadRequest 请求错误 404 Not Found 未找到  5xx服务器错误  500 InternalServerError 服务器内部错误">
 <meta property="og:type" content="article">
-<meta property="og:title" content="进程和线程的区别">
-<meta property="og:url" content="https://asurance.github.io/knowledge-points/2021/01/28/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/index.html">
+<meta property="og:title" content="Http返回值">
+<meta property="og:url" content="https://asurance.github.io/knowledge-points/2021/02/18/Http%E8%BF%94%E5%9B%9E%E5%80%BC/index.html">
 <meta property="og:site_name" content="知识点">
-<meta property="og:description" content="进程是资源分配最小的单位,线程是程序执行的最小单位. 进程有独立的地址空间,线程会共享地址空间. 线程创建,切换,占用资源开销小. 进程间通信不便,线程通信方便. 进程挂掉不影响其他进程,但线程挂掉会导致整个进程挂掉(线程死循环不会影响其他线程)">
+<meta property="og:description" content="1xx信息提示  101 Switching Protocols 转换协议(websocket中会用到)  2xx成功  200 OK 正常  3xx重定向  304 NotModified 见缓存  4xx客户端错误  400 BadRequest 请求错误 404 Not Found 未找到  5xx服务器错误  500 InternalServerError 服务器内部错误">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-28T13:07:39.000Z">
+<meta property="article:published_time" content="2021-02-18T14:03:26.000Z">
 <meta property="article:modified_time" content="2021-02-18T14:23:58.193Z">
 <meta property="article:author" content="asurance">
 <meta name="twitter:card" content="summary">
@@ -73,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-进程和线程的区别" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Http返回值" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/knowledge-points/2021/01/28/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/" class="article-date">
-  <time class="dt-published" datetime="2021-01-28T13:07:39.000Z" itemprop="datePublished">2021-01-28</time>
+    <a href="/knowledge-points/2021/02/18/Http%E8%BF%94%E5%9B%9E%E5%80%BC/" class="article-date">
+  <time class="dt-published" datetime="2021-02-18T14:03:26.000Z" itemprop="datePublished">2021-02-18</time>
 </a>
     
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      进程和线程的区别
+      Http返回值
     </h1>
   
 
@@ -95,18 +95,32 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <ol>
-<li>进程是资源分配最小的单位,线程是程序执行的最小单位.</li>
-<li>进程有独立的地址空间,线程会共享地址空间.</li>
-<li>线程创建,切换,占用资源开销小.</li>
-<li>进程间通信不便,线程通信方便.</li>
-<li>进程挂掉不影响其他进程,但线程挂掉会导致整个进程挂掉(线程死循环不会影响其他线程)</li>
-</ol>
+        <h1 id="1xx"><a href="#1xx" class="headerlink" title="1xx"></a>1xx</h1><p>信息提示</p>
+<ul>
+<li>101 Switching Protocols 转换协议(websocket中会用到)</li>
+</ul>
+<h1 id="2xx"><a href="#2xx" class="headerlink" title="2xx"></a>2xx</h1><p>成功</p>
+<ul>
+<li>200 OK 正常</li>
+</ul>
+<h1 id="3xx"><a href="#3xx" class="headerlink" title="3xx"></a>3xx</h1><p>重定向</p>
+<ul>
+<li>304 NotModified 见<a href="2021/02/01/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5/">缓存</a></li>
+</ul>
+<h1 id="4xx"><a href="#4xx" class="headerlink" title="4xx"></a>4xx</h1><p>客户端错误</p>
+<ul>
+<li>400 BadRequest 请求错误</li>
+<li>404 Not Found 未找到</li>
+</ul>
+<h1 id="5xx"><a href="#5xx" class="headerlink" title="5xx"></a>5xx</h1><p>服务器错误</p>
+<ul>
+<li>500 InternalServerError 服务器内部错误</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/01/28/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/" data-id="cklaygg5100057op55r1odr1k" data-title="进程和线程的区别" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/02/18/Http%E8%BF%94%E5%9B%9E%E5%80%BC/" data-id="cklaygg4q00007op57o275dd6" data-title="Http返回值" class="article-share-link">分享</a>
       
       
       
@@ -116,19 +130,10 @@
     
 <nav id="article-nav">
   
-    <a href="/knowledge-points/2021/02/01/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前一篇</strong>
-      <div class="article-nav-title">
-        
-          浏览器缓存策略
-        
-      </div>
-    </a>
   
-  
-    <a href="/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/knowledge-points/2021/02/03/%E8%B7%A8%E5%9F%9F/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">react 生命周期</div>
+      <div class="article-nav-title">CORS跨域资源共享</div>
     </a>
   
 </nav>
