@@ -71,6 +71,56 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-TCP连接过程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/knowledge-points/2021/02/19/TCP%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2021-02-19T14:02:16.000Z" itemprop="datePublished">2021-02-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/knowledge-points/2021/02/19/TCP%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B/">TCP连接过程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="三次握手"><a href="#三次握手" class="headerlink" title="三次握手"></a>三次握手</h1><ul>
+<li>client -&gt; server SYN=1 seq=x</li>
+<li>server -&gt; client SYN=1 ACK=1 seq=y ack=x+1</li>
+<li>client -&gt; server ACK=1 seq=x+1 ack=y+1<h1 id="四次挥手"><a href="#四次挥手" class="headerlink" title="四次挥手"></a>四次挥手</h1></li>
+<li>client -&gt; server FIN=1 seq=u</li>
+<li>server -&gt; client ACK=1 seq=v ack=u+1</li>
+<li>server -&gt; client FIN=1 ACK=1 seq=w ack=u+1</li>
+<li>client -&gt; server ACK=1 seq=u+1 ack=w+1</li>
+</ul>
+<h1 id="四次挥手的原因"><a href="#四次挥手的原因" class="headerlink" title="四次挥手的原因"></a>四次挥手的原因</h1><p>服务器收到消息可能还有数据需要发送,所以只能先回复ACK,然后才回复FIN</p>
+<h1 id="四次挥手client最后等待的原因"><a href="#四次挥手client最后等待的原因" class="headerlink" title="四次挥手client最后等待的原因"></a>四次挥手client最后等待的原因</h1><p>防止服务器没收到最后一次信息而未正确断开连接</p>
+<h1 id="三次握手的原因"><a href="#三次握手的原因" class="headerlink" title="三次握手的原因"></a>三次握手的原因</h1><p>保证client和server有相互之间发送数据的序列号</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://asurance.github.io/knowledge-points/2021/02/19/TCP%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B/" data-id="cklcdgikd0002bbos3y9xduu0" data-title="TCP连接过程" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Http请求过程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/knowledge-points/2021/02/19/Http%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/" class="article-date">
@@ -104,7 +154,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/02/19/Http%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/" data-id="cklccput10000bdom92ix5fpo" data-title="Http请求过程" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/02/19/Http%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/" data-id="cklcdgik40000bbosdvzdhrnv" data-title="Http请求过程" class="article-share-link">分享</a>
       
       
       
@@ -163,7 +213,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/02/18/Http%E8%BF%94%E5%9B%9E%E5%80%BC/" data-id="cklccput50001bdom8at2gtm7" data-title="Http返回值" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/02/18/Http%E8%BF%94%E5%9B%9E%E5%80%BC/" data-id="cklcdgikb0001bbos69908q23" data-title="Http返回值" class="article-share-link">分享</a>
       
       
       
@@ -239,7 +289,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/02/03/%E8%B7%A8%E5%9F%9F/" data-id="cklccputb0005bdomeoko6g13" data-title="CORS跨域资源共享" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/02/03/%E8%B7%A8%E5%9F%9F/" data-id="cklcdgiki0006bbos5iy34nu1" data-title="CORS跨域资源共享" class="article-share-link">分享</a>
       
       
       
@@ -292,7 +342,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/02/01/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5/" data-id="cklccputb0004bdomfubzfogy" data-title="浏览器缓存策略" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/02/01/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5/" data-id="cklcdgikh0005bbosbd0phany" data-title="浏览器缓存策略" class="article-share-link">分享</a>
       
       
       
@@ -337,7 +387,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/01/28/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/" data-id="cklccputc0006bdombrsy33rw" data-title="进程和线程的区别" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/01/28/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/" data-id="cklcdgikj0007bbosgv6qh4va" data-title="进程和线程的区别" class="article-share-link">分享</a>
       
       
       
@@ -397,7 +447,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" data-id="cklccputa0003bdomem1keetf" data-title="react 生命周期" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" data-id="cklcdgikg0004bboshtxaa9jv" data-title="react 生命周期" class="article-share-link">分享</a>
       
       
       
@@ -504,7 +554,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/01/26/flex/" data-id="cklccput80002bdom11mq4ve0" data-title="flex" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/01/26/flex/" data-id="cklcdgike0003bbosfznk02om" data-title="flex" class="article-share-link">分享</a>
       
       
       
@@ -547,6 +597,10 @@
       <ul>
         
           <li>
+            <a href="/knowledge-points/2021/02/19/TCP%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B/">TCP连接过程</a>
+          </li>
+        
+          <li>
             <a href="/knowledge-points/2021/02/19/Http%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/">Http请求过程</a>
           </li>
         
@@ -560,10 +614,6 @@
         
           <li>
             <a href="/knowledge-points/2021/02/01/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5/">浏览器缓存策略</a>
-          </li>
-        
-          <li>
-            <a href="/knowledge-points/2021/01/28/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/">进程和线程的区别</a>
           </li>
         
       </ul>
