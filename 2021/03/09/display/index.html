@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   
   
-  <title>flex | 知识点</title>
+  <title>display | 知识点</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="flexdisplay flex inline-flex  flex-direction row column row-reverse column  flex-wrap nowrap wrap wrap-reverse  flex-flow&lt;’flex-direction‘&gt; || &lt;’flex-wrap‘&gt; justify-content flex-start flex">
+  <meta name="description" content="block 默认独占一行(填充父级宽度) 可以设置width,height 可以设置margin&#x2F;padding top&#x2F;bottom&#x2F;left&#x2F;rightinline 默认不会独占一行(自身宽度) 无法设置width,height 无法设置margin&#x2F;padding top&#x2F;bottom,只能设置margin&#x2F;padding left&#x2F;rightinline-block 默认不会独占一行,但是">
 <meta property="og:type" content="article">
-<meta property="og:title" content="flex">
-<meta property="og:url" content="https://asurance.github.io/knowledge-points/2021/01/26/flex/index.html">
+<meta property="og:title" content="display">
+<meta property="og:url" content="https://asurance.github.io/knowledge-points/2021/03/09/display/index.html">
 <meta property="og:site_name" content="知识点">
-<meta property="og:description" content="flexdisplay flex inline-flex  flex-direction row column row-reverse column  flex-wrap nowrap wrap wrap-reverse  flex-flow&lt;’flex-direction‘&gt; || &lt;’flex-wrap‘&gt; justify-content flex-start flex">
+<meta property="og:description" content="block 默认独占一行(填充父级宽度) 可以设置width,height 可以设置margin&#x2F;padding top&#x2F;bottom&#x2F;left&#x2F;rightinline 默认不会独占一行(自身宽度) 无法设置width,height 无法设置margin&#x2F;padding top&#x2F;bottom,只能设置margin&#x2F;padding left&#x2F;rightinline-block 默认不会独占一行,但是">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-26T14:05:52.000Z">
+<meta property="article:published_time" content="2021-03-09T15:30:17.000Z">
 <meta property="article:modified_time" content="2021-03-09T15:53:30.728Z">
 <meta property="article:author" content="asurance">
 <meta name="twitter:card" content="summary">
@@ -73,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-flex" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-display" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/knowledge-points/2021/01/26/flex/" class="article-date">
-  <time class="dt-published" datetime="2021-01-26T14:05:52.000Z" itemprop="datePublished">2021-01-26</time>
+    <a href="/knowledge-points/2021/03/09/display/" class="article-date">
+  <time class="dt-published" datetime="2021-03-09T15:30:17.000Z" itemprop="datePublished">2021-03-09</time>
 </a>
     
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      flex
+      display
     </h1>
   
 
@@ -95,80 +95,20 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h1><h2 id="display"><a href="#display" class="headerlink" title="display"></a>display</h2><ul>
-<li>flex</li>
-<li>inline-flex</li>
-</ul>
-<h2 id="flex-direction"><a href="#flex-direction" class="headerlink" title="flex-direction"></a>flex-direction</h2><ul>
-<li><strong>row</strong></li>
-<li>column</li>
-<li>row-reverse</li>
-<li>column</li>
-</ul>
-<h2 id="flex-wrap"><a href="#flex-wrap" class="headerlink" title="flex-wrap"></a>flex-wrap</h2><ul>
-<li><strong>nowrap</strong></li>
-<li>wrap</li>
-<li>wrap-reverse</li>
-</ul>
-<h2 id="flex-flow"><a href="#flex-flow" class="headerlink" title="flex-flow"></a>flex-flow</h2><p>&lt;’<a href="#flex-direction">flex-direction</a>‘&gt; || &lt;’<a href="#flex-wrap">flex-wrap</a>‘&gt;</p>
-<h2 id="justify-content"><a href="#justify-content" class="headerlink" title="justify-content"></a>justify-content</h2><ul>
-<li><strong>flex-start</strong></li>
-<li>flex-end</li>
-<li>center</li>
-<li>space-between</li>
-<li>space-around</li>
-</ul>
-<h2 id="align-items"><a href="#align-items" class="headerlink" title="align-items"></a>align-items</h2><ul>
-<li><strong>stretch</strong></li>
-<li>flex-start</li>
-<li>flex-end</li>
-<li>center</li>
-<li>baseline</li>
-</ul>
-<h2 id="align-content"><a href="#align-content" class="headerlink" title="align-content"></a>align-content</h2><ul>
-<li><strong>stretch</strong></li>
-<li>flex-start</li>
-<li>flex-end</li>
-<li>center</li>
-<li>space-between</li>
-<li>space-around</li>
-</ul>
-<h2 id="flex-grow"><a href="#flex-grow" class="headerlink" title="flex-grow"></a>flex-grow</h2><ul>
-<li><strong>0</strong></li>
-<li>number</li>
-</ul>
-<h2 id="flex-shrink"><a href="#flex-shrink" class="headerlink" title="flex-shrink"></a>flex-shrink</h2><ul>
-<li><strong>1</strong></li>
-<li>number</li>
-</ul>
-<h2 id="flex-basis"><a href="#flex-basis" class="headerlink" title="flex-basis"></a>flex-basis</h2><ul>
-<li><strong>auto</strong></li>
-<li>content</li>
-<li>number</li>
-</ul>
-<h2 id="flex-1"><a href="#flex-1" class="headerlink" title="flex"></a>flex</h2><p>&lt;’<a href="#flex-grow">flex-grow</a>‘&gt; &lt;’<a href="#flex-shrink">flex-shrink</a>‘&gt;? || &lt;’<a href="#flex-basis">flex-basis</a>‘&gt;</p>
-<ul>
-<li><strong>initial</strong> -&gt; ‘0 1 auto’</li>
-<li>auto -&gt; ‘1 1 auto’</li>
-<li>none -&gt; ‘0 0 auto’</li>
-</ul>
-<h2 id="align-self"><a href="#align-self" class="headerlink" title="align-self"></a>align-self</h2><ul>
-<li><strong>auto</strong></li>
-<li>flex-start</li>
-<li>flex-end</li>
-<li>center</li>
-<li>baseline</li>
-<li>stretch</li>
-</ul>
-<h2 id="order"><a href="#order" class="headerlink" title="order"></a>order</h2><ul>
-<li><strong>0</strong></li>
-<li>number</li>
+        <h1 id="block"><a href="#block" class="headerlink" title="block"></a>block</h1><ul>
+<li>默认独占一行(填充父级宽度)</li>
+<li>可以设置width,height</li>
+<li>可以设置margin/padding top/bottom/left/right<h1 id="inline"><a href="#inline" class="headerlink" title="inline"></a>inline</h1></li>
+<li>默认不会独占一行(自身宽度)</li>
+<li>无法设置width,height</li>
+<li>无法设置margin/padding top/bottom,只能设置margin/padding left/right<h1 id="inline-block"><a href="#inline-block" class="headerlink" title="inline-block"></a>inline-block</h1></li>
+<li>默认不会独占一行,但是可以像block一样设置属性</li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/01/26/flex/" data-id="ckm270ncl0007kdn95elwd7n7" data-title="flex" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/03/09/display/" data-id="ckm270nck0006kdn9gkqp1081" data-title="display" class="article-share-link">分享</a>
       
       
       
@@ -178,15 +118,20 @@
     
 <nav id="article-nav">
   
-    <a href="/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/knowledge-points/2021/03/09/React%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前一篇</strong>
       <div class="article-nav-title">
         
-          react 生命周期
+          React通信方式
         
       </div>
     </a>
   
+  
+    <a href="/knowledge-points/2021/03/03/CSS%E5%8A%A8%E7%94%BB/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">CSS动画</div>
+    </a>
   
 </nav>
 

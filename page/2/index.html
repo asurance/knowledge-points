@@ -4,17 +4,13 @@
   <meta charset="utf-8">
   
   
-  <title>flex | 知识点</title>
+  <title>知识点</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="flexdisplay flex inline-flex  flex-direction row column row-reverse column  flex-wrap nowrap wrap wrap-reverse  flex-flow&lt;’flex-direction‘&gt; || &lt;’flex-wrap‘&gt; justify-content flex-start flex">
-<meta property="og:type" content="article">
-<meta property="og:title" content="flex">
-<meta property="og:url" content="https://asurance.github.io/knowledge-points/2021/01/26/flex/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="知识点">
+<meta property="og:url" content="https://asurance.github.io/knowledge-points/page/2/index.html">
 <meta property="og:site_name" content="知识点">
-<meta property="og:description" content="flexdisplay flex inline-flex  flex-direction row column row-reverse column  flex-wrap nowrap wrap wrap-reverse  flex-flow&lt;’flex-direction‘&gt; || &lt;’flex-wrap‘&gt; justify-content flex-start flex">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-26T14:05:52.000Z">
-<meta property="article:modified_time" content="2021-03-09T15:53:30.728Z">
 <meta property="article:author" content="asurance">
 <meta name="twitter:card" content="summary">
   
@@ -73,7 +69,69 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-flex" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main">
+  
+    <article id="post-react-生命周期" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="article-date">
+  <time class="dt-published" datetime="2021-01-27T13:00:27.000Z" itemprop="datePublished">2021-01-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">react 生命周期</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="hook"><a href="#hook" class="headerlink" title="hook"></a>hook</h1><ul>
+<li>constructor(props)</li>
+<li>componentDidMount()</li>
+<li>componentDidUpdate(prevProps, prevState, snapshot)</li>
+<li>componentWillUnmount()</li>
+<li>shouldComponentUpdate(nextProps, nextState)</li>
+<li>static getDerivedStateFromProps(props, state)</li>
+<li>getSnapshotBeforeUpdate(prevProps, prevState)</li>
+<li>static getDerivedStateFromError(error)</li>
+<li>componentDidCatch(error, info)</li>
+</ul>
+<h1 id="挂载时"><a href="#挂载时" class="headerlink" title="挂载时"></a>挂载时</h1><ul>
+<li>constructor -&gt; getDerivedStateFromProps -&gt; render -&gt; update DOM tree -&gt; componentDidMount</li>
+</ul>
+<h1 id="更新时"><a href="#更新时" class="headerlink" title="更新时"></a>更新时</h1><ul>
+<li>new props -&gt; getDerivedStateFromProps -&gt; shouldComponentUpdate -&gt; render -&gt; update DOM tree -&gt; getSnapshotBeforeUpdate -&gt; componetDidUpdate</li>
+<li>setState -&gt; getDerivedStateFromProps -&gt; shouldComponentUpdate -&gt; render -&gt; update DOM tree -&gt; getSnapshotBeforeUpdate -&gt; componetDidUpdate</li>
+<li>forceUpdate -&gt; getDerivedStateFromProps -&gt; render -&gt; update DOM tree -&gt; getSnapshotBeforeUpdate -&gt; componetDidUpdate</li>
+</ul>
+<h1 id="卸载时"><a href="#卸载时" class="headerlink" title="卸载时"></a>卸载时</h1><ul>
+<li>componetWilUnmount</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://asurance.github.io/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" data-id="ckm270ncm0008kdn9ck1abgp1" data-title="react 生命周期" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-flex" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/knowledge-points/2021/01/26/flex/" class="article-date">
   <time class="dt-published" datetime="2021-01-26T14:05:52.000Z" itemprop="datePublished">2021-01-26</time>
@@ -86,8 +144,8 @@
       <header class="article-header">
         
   
-    <h1 class="p-name article-title" itemprop="headline name">
-      flex
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/knowledge-points/2021/01/26/flex/">flex</a>
     </h1>
   
 
@@ -175,24 +233,17 @@
     </footer>
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/knowledge-points/2021/01/27/react-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前一篇</strong>
-      <div class="article-nav-title">
-        
-          react 生命周期
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
-  
 </article>
 
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/knowledge-points/">&laquo; 上一页</a><a class="page-number" href="/knowledge-points/">1</a><span class="page-number current">2</span>
+  </nav>
 
 </section>
         
