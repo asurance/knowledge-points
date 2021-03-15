@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   
   
-  <title>display | 知识点</title>
+  <title>React context | 知识点</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="block 默认独占一行(填充父级宽度) 可以设置width,height 可以设置margin&#x2F;padding top&#x2F;bottom&#x2F;left&#x2F;rightinline 默认不会独占一行(自身宽度) 无法设置width,height 无法设置margin&#x2F;padding top&#x2F;bottom,只能设置margin&#x2F;padding left&#x2F;rightinline-block 默认不会独占一行,但是">
+  <meta name="description" content="创建1const &amp;#123;Provider,Consumer&amp;#125; &#x3D; createContext(DefaultValue)  Provider 数据提供方123&lt;Provider value&#x3D;&amp;#123;&#x2F;*共享的数据*&#x2F;&amp;#125;&gt;&amp;#123;&#x2F;*渲染内容*&#x2F;&amp;#125;&lt;&#x2F;Provider&gt; Consumer 数据消费方1234&lt;Consumer&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="display">
-<meta property="og:url" content="https://asurance.github.io/knowledge-points/2021/03/09/display/index.html">
+<meta property="og:title" content="React context">
+<meta property="og:url" content="https://asurance.github.io/knowledge-points/2021/03/14/React-context/index.html">
 <meta property="og:site_name" content="知识点">
-<meta property="og:description" content="block 默认独占一行(填充父级宽度) 可以设置width,height 可以设置margin&#x2F;padding top&#x2F;bottom&#x2F;left&#x2F;rightinline 默认不会独占一行(自身宽度) 无法设置width,height 无法设置margin&#x2F;padding top&#x2F;bottom,只能设置margin&#x2F;padding left&#x2F;rightinline-block 默认不会独占一行,但是">
+<meta property="og:description" content="创建1const &amp;#123;Provider,Consumer&amp;#125; &#x3D; createContext(DefaultValue)  Provider 数据提供方123&lt;Provider value&#x3D;&amp;#123;&#x2F;*共享的数据*&#x2F;&amp;#125;&gt;&amp;#123;&#x2F;*渲染内容*&#x2F;&amp;#125;&lt;&#x2F;Provider&gt; Consumer 数据消费方1234&lt;Consumer&amp;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-03-09T15:30:17.000Z">
+<meta property="article:published_time" content="2021-03-14T14:53:09.000Z">
 <meta property="article:modified_time" content="2021-03-15T07:02:27.430Z">
 <meta property="article:author" content="asurance">
 <meta name="twitter:card" content="summary">
@@ -73,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-display" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-React-context" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/knowledge-points/2021/03/09/display/" class="article-date">
-  <time class="dt-published" datetime="2021-03-09T15:30:17.000Z" itemprop="datePublished">2021-03-09</time>
+    <a href="/knowledge-points/2021/03/14/React-context/" class="article-date">
+  <time class="dt-published" datetime="2021-03-14T14:53:09.000Z" itemprop="datePublished">2021-03-14</time>
 </a>
     
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      display
+      React context
     </h1>
   
 
@@ -95,20 +95,18 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="block"><a href="#block" class="headerlink" title="block"></a>block</h1><ul>
-<li>默认独占一行(填充父级宽度)</li>
-<li>可以设置width,height</li>
-<li>可以设置margin/padding top/bottom/left/right<h1 id="inline"><a href="#inline" class="headerlink" title="inline"></a>inline</h1></li>
-<li>默认不会独占一行(自身宽度)</li>
-<li>无法设置width,height</li>
-<li>无法设置margin/padding top/bottom,只能设置margin/padding left/right<h1 id="inline-block"><a href="#inline-block" class="headerlink" title="inline-block"></a>inline-block</h1></li>
-<li>默认不会独占一行,但是可以像block一样设置属性</li>
+        <h1 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h1><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;Provider,Consumer&#125; = createContext(DefaultValue)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Provider 数据提供方<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;Provider value=&#123;<span class="comment">/*共享的数据*/</span>&#125;&gt;</span><br><span class="line">&#123;<span class="comment">/*渲染内容*/</span>&#125;</span><br><span class="line">&lt;/Provider&gt;</span><br></pre></td></tr></table></figure></li>
+<li>Consumer 数据消费方<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;Consumer&gt;</span><br><span class="line">&#123;<span class="function"><span class="params">value</span> =&gt;</span> <span class="comment">/*渲染内容*/</span>&#125;</span><br><span class="line">&lt;/Consumer&gt;</span><br><span class="line">&lt;/Provider&gt;</span><br></pre></td></tr></table></figure></li>
+<li>类组件特有方式<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Class.contextType = Context</span><br><span class="line"><span class="comment">// 值由 this.context获取</span></span><br></pre></td></tr></table></figure></li>
+<li>函数组件特有方式<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> value = useContext(Context)</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/03/09/display/" data-id="ckma8otgh00068aolbneg2is5" data-title="display" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/03/14/React-context/" data-id="ckma8otge00038aolhhx77e22" data-title="React context" class="article-share-link">分享</a>
       
       
       
@@ -118,19 +116,19 @@
     
 <nav id="article-nav">
   
-    <a href="/knowledge-points/2021/03/09/React%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/knowledge-points/2021/03/14/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前一篇</strong>
       <div class="article-nav-title">
         
-          React通信方式
+          防抖和节流
         
       </div>
     </a>
   
   
-    <a href="/knowledge-points/2021/03/03/CSS%E5%8A%A8%E7%94%BB/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/knowledge-points/2021/03/09/React%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">CSS动画</div>
+      <div class="article-nav-title">React通信方式</div>
     </a>
   
 </nav>

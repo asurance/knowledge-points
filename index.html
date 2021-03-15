@@ -71,6 +71,134 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-回流和重绘" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/knowledge-points/2021/03/15/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/" class="article-date">
+  <time class="dt-published" datetime="2021-03-15T06:54:01.000Z" itemprop="datePublished">2021-03-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/knowledge-points/2021/03/15/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/">回流和重绘</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="回流"><a href="#回流" class="headerlink" title="回流"></a>回流</h1><p>尺寸布局之类发生变化</p>
+<h1 id="重绘"><a href="#重绘" class="headerlink" title="重绘"></a>重绘</h1><p>仅显示上发生变化</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>回流必将引起重绘,重绘不一定引起回流</p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>获取布局信息的时候会强制刷新队列</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://asurance.github.io/knowledge-points/2021/03/15/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/" data-id="ckma8otgk00098aol4orzchz0" data-title="回流和重绘" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-防抖和节流" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/knowledge-points/2021/03/14/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/" class="article-date">
+  <time class="dt-published" datetime="2021-03-14T15:07:16.000Z" itemprop="datePublished">2021-03-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/knowledge-points/2021/03/14/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/">防抖和节流</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="共同点"><a href="#共同点" class="headerlink" title="共同点"></a>共同点</h1><p>都是减少函数实际调用次数的方法</p>
+<h1 id="防抖"><a href="#防抖" class="headerlink" title="防抖"></a>防抖</h1><p>多次调用只有最后一次后的若干延迟后生效</p>
+<h1 id="节流"><a href="#节流" class="headerlink" title="节流"></a>节流</h1><p>多次调用少次响应</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://asurance.github.io/knowledge-points/2021/03/14/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/" data-id="ckma8otgp000e8aoldef19ap9" data-title="防抖和节流" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-React-context" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/knowledge-points/2021/03/14/React-context/" class="article-date">
+  <time class="dt-published" datetime="2021-03-14T14:53:09.000Z" itemprop="datePublished">2021-03-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/knowledge-points/2021/03/14/React-context/">React context</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h1><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;Provider,Consumer&#125; = createContext(DefaultValue)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Provider 数据提供方<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;Provider value=&#123;<span class="comment">/*共享的数据*/</span>&#125;&gt;</span><br><span class="line">&#123;<span class="comment">/*渲染内容*/</span>&#125;</span><br><span class="line">&lt;/Provider&gt;</span><br></pre></td></tr></table></figure></li>
+<li>Consumer 数据消费方<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;Consumer&gt;</span><br><span class="line">&#123;<span class="function"><span class="params">value</span> =&gt;</span> <span class="comment">/*渲染内容*/</span>&#125;</span><br><span class="line">&lt;/Consumer&gt;</span><br><span class="line">&lt;/Provider&gt;</span><br></pre></td></tr></table></figure></li>
+<li>类组件特有方式<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Class.contextType = Context</span><br><span class="line"><span class="comment">// 值由 this.context获取</span></span><br></pre></td></tr></table></figure></li>
+<li>函数组件特有方式<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> value = useContext(Context)</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://asurance.github.io/knowledge-points/2021/03/14/React-context/" data-id="ckma8otge00038aolhhx77e22" data-title="React context" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-React通信方式" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/knowledge-points/2021/03/09/React%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/" class="article-date">
@@ -103,7 +231,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/03/09/React%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/" data-id="ckm270ncj0004kdn909iid6pi" data-title="React通信方式" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/03/09/React%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/" data-id="ckma8otgf00048aol4ykp6ekn" data-title="React通信方式" class="article-share-link">分享</a>
       
       
       
@@ -150,7 +278,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/03/09/display/" data-id="ckm270nck0006kdn9gkqp1081" data-title="display" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/03/09/display/" data-id="ckma8otgh00068aolbneg2is5" data-title="display" class="article-share-link">分享</a>
       
       
       
@@ -228,7 +356,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/03/03/CSS%E5%8A%A8%E7%94%BB/" data-id="ckm270ncc0000kdn982b97ovj" data-title="CSS动画" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/03/03/CSS%E5%8A%A8%E7%94%BB/" data-id="ckma8otg600008aol6ndg4evz" data-title="CSS动画" class="article-share-link">分享</a>
       
       
       
@@ -277,7 +405,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/03/02/Http%E5%B8%B8%E8%A7%81header/" data-id="ckm270ncg0001kdn9dped998k" data-title="Http常见header" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/03/02/Http%E5%B8%B8%E8%A7%81header/" data-id="ckma8otgc00018aol2uxg9co0" data-title="Http常见header" class="article-share-link">分享</a>
       
       
       
@@ -327,7 +455,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/02/19/TCP%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B/" data-id="ckm270nck0005kdn92rfv6l18" data-title="TCP连接过程" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/02/19/TCP%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B/" data-id="ckma8otgg00058aol5u3q9h8o" data-title="TCP连接过程" class="article-share-link">分享</a>
       
       
       
@@ -339,9 +467,9 @@
 
 
   
-    <article id="post-Http请求过程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-浏览器获取页面流程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/knowledge-points/2021/02/19/Http%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/" class="article-date">
+    <a href="/knowledge-points/2021/02/19/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%8E%B7%E5%8F%96%E9%A1%B5%E9%9D%A2%E6%B5%81%E7%A8%8B/" class="article-date">
   <time class="dt-published" datetime="2021-02-19T13:46:35.000Z" itemprop="datePublished">2021-02-19</time>
 </a>
     
@@ -353,7 +481,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/knowledge-points/2021/02/19/Http%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/">Http请求过程</a>
+      <a class="p-name article-title" href="/knowledge-points/2021/02/19/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%8E%B7%E5%8F%96%E9%A1%B5%E9%9D%A2%E6%B5%81%E7%A8%8B/">Http请求过程</a>
     </h1>
   
 
@@ -362,17 +490,24 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <ul>
-<li>域名解析(带缓存)</li>
-<li>TCP连接</li>
-<li>具体请求数据</li>
-<li>响应数据</li>
-<li>断开连接</li>
+<li><p>域名解析(带缓存)</p>
+</li>
+<li><p>TCP连接</p>
+</li>
+<li><p>具体请求数据</p>
+</li>
+<li><p>响应数据</p>
+</li>
+<li><p>断开连接</p>
+</li>
+<li><p>收到数据后解析DOM和CSS Rule 生成Render树</p>
+</li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/02/19/Http%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/" data-id="ckm270nci0002kdn9823a7uzc" data-title="Http请求过程" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/02/19/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%8E%B7%E5%8F%96%E9%A1%B5%E9%9D%A2%E6%B5%81%E7%A8%8B/" data-id="ckma8otgn000b8aoleidwh1mk" data-title="Http请求过程" class="article-share-link">分享</a>
       
       
       
@@ -431,181 +566,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/02/18/Http%E8%BF%94%E5%9B%9E%E5%80%BC/" data-id="ckm270nci0003kdn99alb8gt0" data-title="Http返回值" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-跨域" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/knowledge-points/2021/02/03/%E8%B7%A8%E5%9F%9F/" class="article-date">
-  <time class="dt-published" datetime="2021-02-03T13:30:09.000Z" itemprop="datePublished">2021-02-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/knowledge-points/2021/02/03/%E8%B7%A8%E5%9F%9F/">CORS跨域资源共享</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="简单请求"><a href="#简单请求" class="headerlink" title="简单请求"></a>简单请求</h1><ol>
-<li>方法是以下三种之一<ol>
-<li><code>HEAD</code></li>
-<li><code>GET</code></li>
-<li><code>POST</code></li>
-</ol>
-</li>
-<li>header只有这几种字段<ol>
-<li><code>Accept</code></li>
-<li><code>Accept-Language</code></li>
-<li><code>Content-Language</code></li>
-<li><code>Last-Event-ID</code></li>
-<li><code>Content-Type</code>:只限三种值<ol>
-<li><code>application/x-www-form-urlencoded</code></li>
-<li><code>multipart/form-data</code></li>
-<li><code>text/plain</code></li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<p>浏览器发请求会加<code>Origin</code>字段,服务器收到后如果允许会返回</p>
-<ol>
-<li><code>Access-Control-Allow-Origin</code>:<code>Origin</code>的值或是<code>*</code></li>
-<li><code>Access-Control-Allow-Credentials</code>(可选):是否允许服务器发送cookie,发送请求的地方需要设置<code>withCredentials</code>为true,同时<code>Access-Control-Allow-Origin</code>不能为<code>*</code></li>
-<li><code>Access-Control-Expose-Headers</code>(可选):指定服务器能读取到除<code>Cache-Control</code>、<code>Content-Language</code>、<code>Content-Type</code>、<code>Expires</code>、<code>Last-Modified</code>、<code>Pragma</code>的header信息</li>
-</ol>
-<h1 id="非简单请求"><a href="#非简单请求" class="headerlink" title="非简单请求"></a>非简单请求</h1><p>浏览器会先用<code>OPTION</code>发送一条预检请求,里面除了<code>Origin</code>会带</p>
-<ol>
-<li><code>Access-Control-Request-Method</code>:跨域请求的方法</li>
-<li><code>Access-Control-Request-Headers</code>:请求中附带的额外header</li>
-</ol>
-<p>服务器收到如果允许的话会返回除了简单请求的三个header外</p>
-<ol>
-<li><code>Access-Control-Allow-Methods</code>:允许的方法</li>
-<li><code>Access-Control-Allow-Headers</code>:允许的header</li>
-<li><code>Access-Control-Max-Age</code>(可选):预检有效期</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/02/03/%E8%B7%A8%E5%9F%9F/" data-id="ckm270nco000akdn9eiewgty4" data-title="CORS跨域资源共享" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-浏览器缓存策略" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/knowledge-points/2021/02/01/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5/" class="article-date">
-  <time class="dt-published" datetime="2021-02-01T13:16:09.000Z" itemprop="datePublished">2021-02-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/knowledge-points/2021/02/01/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5/">浏览器缓存策略</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="强缓存"><a href="#强缓存" class="headerlink" title="强缓存"></a>强缓存</h1><p>浏览器判定本地缓存未过期,直接使用本地缓存。</p>
-<ul>
-<li><code>expires</code><br>存储时间戳,如果获取的时间戳小于expires的时间戳,则可以直接用缓存。</li>
-<li><code>Cache-Control</code></li>
-</ul>
-<ol>
-<li><code>max-age</code><br>代表资源的过期时间。</li>
-<li><code>public</code>/<code>private</code><br>浏览器和代理服务器都可缓存/仅浏览器缓存 </li>
-<li><code>no-cache</code><br>告诉浏览器没有强缓存,有协商缓存。</li>
-<li><code>no-store</code><br>既没有强缓存,也没有协商缓存。<h1 id="协商缓存"><a href="#协商缓存" class="headerlink" title="协商缓存"></a>协商缓存</h1>浏览器向服务器询问资源是否过期,未过期则直接使用本地缓存。(请求会返回状态码304)</li>
-</ol>
-<ul>
-<li><code>Last-Modified</code>/<code>If-Modified-Since</code><br>首次请求会回<code>Last-Modified</code>和时间戳,之后的请求需要带<code>If-Modified-Since</code>并带上上次的时间戳。</li>
-<li><code>Etag</code>/<code>If-None-Match</code><br><code>Etag</code>是服务器生成的文件的标识符,会随文件内容变化。首次请求会回<code>Etag</code>和标识符,之后的请求需要带<code>If-Modified-Since</code>并带上上次的标识符。</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/02/01/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5/" data-id="ckm270ncn0009kdn9d2dk0dlc" data-title="浏览器缓存策略" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-进程和线程的区别" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/knowledge-points/2021/01/28/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/" class="article-date">
-  <time class="dt-published" datetime="2021-01-28T13:07:39.000Z" itemprop="datePublished">2021-01-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/knowledge-points/2021/01/28/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/">进程和线程的区别</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>进程是资源分配最小的单位,线程是程序执行的最小单位.</li>
-<li>进程有独立的地址空间,线程会共享地址空间.</li>
-<li>线程创建,切换,占用资源开销小.</li>
-<li>进程间通信不便,线程通信方便.</li>
-<li>进程挂掉不影响其他进程,但线程挂掉会导致整个进程挂掉(线程死循环不会影响其他线程)</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://asurance.github.io/knowledge-points/2021/01/28/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/" data-id="ckm270ncp000bkdn92al96lec" data-title="进程和线程的区别" class="article-share-link">分享</a>
+      <a data-url="https://asurance.github.io/knowledge-points/2021/02/18/Http%E8%BF%94%E5%9B%9E%E5%80%BC/" data-id="ckma8otgd00028aol8jq337g7" data-title="Http返回值" class="article-share-link">分享</a>
       
       
       
@@ -653,23 +614,23 @@
       <ul>
         
           <li>
+            <a href="/knowledge-points/2021/03/15/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/">回流和重绘</a>
+          </li>
+        
+          <li>
+            <a href="/knowledge-points/2021/03/14/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/">防抖和节流</a>
+          </li>
+        
+          <li>
+            <a href="/knowledge-points/2021/03/14/React-context/">React context</a>
+          </li>
+        
+          <li>
             <a href="/knowledge-points/2021/03/09/React%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/">React通信方式</a>
           </li>
         
           <li>
             <a href="/knowledge-points/2021/03/09/display/">display</a>
-          </li>
-        
-          <li>
-            <a href="/knowledge-points/2021/03/03/CSS%E5%8A%A8%E7%94%BB/">CSS动画</a>
-          </li>
-        
-          <li>
-            <a href="/knowledge-points/2021/03/02/Http%E5%B8%B8%E8%A7%81header/">Http常见header</a>
-          </li>
-        
-          <li>
-            <a href="/knowledge-points/2021/02/19/TCP%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B/">TCP连接过程</a>
           </li>
         
       </ul>
