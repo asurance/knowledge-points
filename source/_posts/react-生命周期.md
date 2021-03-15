@@ -29,3 +29,6 @@ tags:
 # 卸载时
 
 * componetWilUnmount
+
+# 错误时
+* componentDidCatch -> setState正常流程
